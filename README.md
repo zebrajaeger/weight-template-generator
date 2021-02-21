@@ -6,12 +6,8 @@ This creates a graph to print out on a DIN A4 paper.
 
 ## Motivation
 
-1. Playing al little bit with embedded SVG.
+1. Playing a little bit with embedded SVG.
 2. Control my weight during lockdown in a simple way...
-
-## Usage 
-
-
 
 ## Develop / Run
 
