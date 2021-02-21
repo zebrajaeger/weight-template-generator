@@ -1,0 +1,14 @@
+{
+  "name": "weight-template-generator",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "develop": "browser-sync start --server --files src/* --index index.html --directory --serveStatic src"
+  },
+  "license": "ISC",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.14"
+  }
+}

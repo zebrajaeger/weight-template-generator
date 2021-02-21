@@ -1,0 +1,59 @@
+#graph {
+    background-color:white;
+    border: 1px solid black;
+    margin: 1em;
+}
+
+#graph line {
+    stroke:rgb(0,0,0);
+    stroke-width:0.2;
+}
+#graph line.major{
+    stroke:rgb(0,0,0);
+    stroke-width:0.4;
+}
+
+#graph text {
+    stroke:rgb(0,0,0);
+    stroke-width:0.2;
+    font-family: Monospaced;
+    font-size: 2.5px;
+    font-weight: lighter;
+    font-stretch: ultra-expanded;
+    letter-spacing: 0.3px;
+}
+
+
+body {
+    background: lightgray;
+    margin:0;
+    padding:0;
+}
+
+.parameters {
+    display: grid;
+    grid-template-columns:  50% 50%;
+}
+
+.mdc-text-field,.mdc-button{
+    margin: 1em;
+}
+
+.mdc-button--raised.print{
+}
+.mdc-button--raised.update{
+}
+
+button .material-icons{
+    margin-right: 0.5em;
+}
+@media print {
+    .screen-only {
+        display: none;
+    }
+
+    #graph {
+        margin: 0;
+        border: unset;
+    }
+}

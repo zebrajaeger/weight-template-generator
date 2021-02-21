@@ -1,0 +1,59 @@
+<html>
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/material-components-web/10.0.0/material-components-web.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+<form class="parameters screen-only" method="get" target="#">
+    <label class="w-start mdc-text-field mdc-text-field--filled">
+        <span class="mdc-text-field__ripple"></span>
+        <span class="mdc-floating-label" id="w-start">Weight start value</span>
+        <input class="mdc-text-field__input" name="wStart" value="90" type="text" aria-labelledby="my-label-id">
+        <span class="mdc-line-ripple"></span>
+    </label>
+
+    <label class="w-step mdc-text-field mdc-text-field--filled">
+        <span class="mdc-text-field__ripple"></span>
+        <span class="mdc-floating-label" id="w-step">Weight step size</span>
+        <input class="mdc-text-field__input" name="wStep" value="0.2" type="text" aria-labelledby="my-label-id">
+        <span class="mdc-line-ripple"></span>
+    </label>
+
+    <label class="f-start mdc-text-field mdc-text-field--filled">
+        <span class="mdc-text-field__ripple"></span>
+        <span class="mdc-floating-label" id="f-start">Fat start value</span>
+        <input class="mdc-text-field__input" name="fStart" value="90" type="text" aria-labelledby="my-label-id">
+        <span class="mdc-line-ripple"></span>
+    </label>
+
+    <label class="f-step mdc-text-field mdc-text-field--filled">
+        <span class="mdc-text-field__ripple"></span>
+        <span class="mdc-floating-label" id="f-step">Fat step size</span>
+        <input class="mdc-text-field__input" name="fStep" value="0.2" type="text" aria-labelledby="my-label-id">
+        <span class="mdc-line-ripple"></span>
+    </label>
+
+    <button type="button" onclick="window.print();" class="submit-button print mdc-button mdc-button--raised">
+        <span class="material-icons">print</span>
+        <span class="mdc-button__label">Print</span>
+    </button>
+    <button type="submit" class="submit-button update mdc-button mdc-button--raised">
+        <span class="material-icons">refresh</span>
+        <span class="mdc-button__label">Update</span>
+    </button>
+</form>
+
+<svg id="graph" width="297mm" viewBox="0 0 296 209" preserveAspectRatio="xMidYMid meet"/>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/material-components-web/10.0.0/material-components-web.min.js"></script>
+<script
+        src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+<script src="app.js">
+
+</script>
+</body>
+</html>
