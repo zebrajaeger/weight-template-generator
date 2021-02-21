@@ -19,7 +19,7 @@ run
 
 then run
 
-    npm run serve
+    npm run develop
 
 and open a Browser of your choice @ http://localhost:3000
 
