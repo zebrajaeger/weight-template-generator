@@ -59,13 +59,13 @@ function createGrid() {
     }
 
     const xSize = x2 - xStart;
-    const xStep = xSize / 31;
-    for (let i = 0; i <= 31; ++i) {
+    const xStep = xSize / 30;
+    for (let i = 0; i <= 30; ++i) {
         const x = xStart + (i * xStep);
-        $g.append(createLine(x, y1, x, (y2 - 8), (i === 0 | i === 31) ? 'major' : 'minor'));
+        $g.append(createLine(x, y1, x, (y2 - 8), (i === 0 | i === 30) ? 'major' : 'minor'));
 
         $g.append(createLine(x, y2 - 5, x, y2 - 3, 'minor'));
-        $g.append(createMText(x, y2, i.toString()));
+        $g.append(createMText(x, y2, (i + 1).toString()));
     }
 
     $g.append(createLine(50, y2 - 5, x2, y2 - 5, 'minor'));
